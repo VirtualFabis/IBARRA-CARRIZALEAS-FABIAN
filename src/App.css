@@ -1,0 +1,56 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.read-the-docs {
+  color: #888;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.select-layer {
+  @apply flex w-full items-center justify-between rounded bg-white p-2 ring-1 ring-gray-300;
+}
+
+.header-error-layer {
+  @apply bg-red-500 text-white font-bold rounded-t px-4 py-2;
+}
+
+.body-error-layer {
+  @apply border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700;
+}
+
+.card-header-layer {
+  @apply mb-4 grid h-28 place-items-center;
+}
